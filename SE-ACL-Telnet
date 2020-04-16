@@ -1,0 +1,36 @@
+ip access-list standard Telnet_Access
+permit 10.96.255.0 0.0.0.255 log telnet-access-granted
+permit 10.97.255.0 0.0.0.255 log telnet-access-granted
+permit 10.98.255.0 0.0.0.255 log telnet-access-granted
+permit 10.99.255.0 0.0.0.255 log telnet-access-granted
+permit 10.100.255.0 0.0.0.255 log telnet-access-granted
+permit 10.101.255.0 0.0.0.255 log telnet-access-granted
+permit 10.102.255.0 0.0.0.255 log telnet-access-granted
+permit 10.103.255.0 0.0.0.255 log telnet-access-granted
+permit 10.104.255.0 0.0.0.255 log telnet-access-granted
+permit 10.105.255.0 0.0.0.255 log telnet-access-granted
+permit 10.106.255.0 0.0.0.255 log telnet-access-granted
+permit 10.107.255.0 0.0.0.255 log telnet-access-granted
+permit 10.108.255.0 0.0.0.255 log telnet-access-granted
+permit 10.109.255.0 0.0.0.255 log telnet-access-granted
+permit 10.110.255.0 0.0.0.255 log telnet-access-granted
+permit 10.111.255.0 0.0.0.255 log telnet-access-granted
+permit 10.112.255.0 0.0.0.255 log telnet-access-granted
+permit 10.113.255.0 0.0.0.255 log telnet-access-granted
+permit 10.114.255.0 0.0.0.255 log telnet-access-granted
+permit 10.115.255.0 0.0.0.255 log telnet-access-granted
+permit 10.116.255.0 0.0.0.255 log telnet-access-granted
+permit 10.117.255.0 0.0.0.255 log telnet-access-granted
+permit 10.118.255.0 0.0.0.255 log telnet-access-granted
+permit 10.119.255.0 0.0.0.255 log telnet-access-granted
+permit 10.120.255.0 0.0.0.255 log telnet-access-granted
+permit 10.121.255.0 0.0.0.255 log telnet-access-granted
+permit 10.122.255.0 0.0.0.255 log telnet-access-granted
+permit 10.123.255.0 0.0.0.255 log telnet-access-granted
+permit 10.124.255.0 0.0.0.255 log telnet-access-granted
+permit 10.125.255.0 0.0.0.255 log telnet-access-granted
+permit 10.126.255.0 0.0.0.255 log telnet-access-granted
+remark below is the VPN Subnet
+permit 10.127.10.0 0.0.0.255 log telnet-access-granted
+permit 10.254.20.0 0.0.0.255 log telnet-access-granted
+deny   any log telnet-access-denied
