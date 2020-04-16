@@ -1,0 +1,12 @@
+ip access-list standard SSH_Access
+permit 172.31.162.25 log ssh-access-granted
+permit 172.31.162.30 log ssh-access-granted
+remark below is the Zen Core Server
+permit 10.254.100.20 log ssh-access-granted
+remark below is the Smoothwall
+permit 10.254.20.0 0.0.0.255 log ssh-access-granted
+remark KJLHQ Subnet.
+permit 172.16.2.0 0.0.0.255 log ssh-access-granted
+remark below is the VPN Subnet
+permit 10.127.10.0 0.0.0.255 log ssh-access-granted
+deny any log ssh-access-denied
